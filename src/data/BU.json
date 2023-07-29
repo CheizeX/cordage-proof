@@ -1,0 +1,1309 @@
+[
+    {
+      "address": {
+        "country": "MX",
+        "first_line": "Complejo Industiral, puerta lll",
+        "location": "QRO",
+        "postal_code": "58546",
+        "second_line": "Pasillo 3B",
+        "subdivision": "MX"
+      },
+      "code": "QRO2022",
+      "colors_theme": "dark",
+      "datetime_config": {
+        "date_format": [
+          {
+            "element": "tag",
+            "value": "day_complete"
+          },
+          {
+            "element": "fixed",
+            "value": ", "
+          },
+          {
+            "element": "tag",
+            "value": "month"
+          },
+          {
+            "element": "fixed",
+            "value": " de "
+          },
+          {
+            "element": "tag",
+            "value": "year"
+          }
+        ],
+        "datetime_format": [
+          {
+            "element": "tag",
+            "value": "date"
+          },
+          {
+            "element": "fixed",
+            "value": ", "
+          },
+          {
+            "element": "tag",
+            "value": "time"
+          }
+        ],
+        "time_format": [
+          {
+            "element": "tag",
+            "value": "hour_24"
+          },
+          {
+            "element": "fixed",
+            "value": ":"
+          },
+          {
+            "element": "tag",
+            "value": "minutes"
+          },
+          {
+            "element": "fixed",
+            "value": ":"
+          },
+          {
+            "element": "tag",
+            "value": "seconds"
+          }
+        ]
+      },
+      "description": "Principal Plant",
+      "favicon": {
+        "file_name": "Image.png",
+        "updated_at": "2022-10-05T21:57:02.254352"
+      },
+      "id": "c8f1dddc-4def-4cc8-aae9-adf2858b9dd",
+      "logo": {
+        "file_name": "Image.png",
+        "updated_at": "2022-10-05T21:57:02.254352"
+      },
+      "main": false,
+      "name": "Business Unit Name",
+      "organization": {
+        "country": "MX",
+        "name": "iCorp",
+        "timezone": "America/Mexico_City"
+      },
+      "responsible": {
+        "email": "jeff@cordage.io",
+        "first_name": "Jose",
+        "last_name": "Pamplona",
+        "middle_name": "Luis",
+        "status": "invited",
+        "type": "advanced"
+      },
+      "social_reason": "SOCIAL REASON",
+      "timezone": "America/Mexico_City",
+      "users": [
+        {
+          "email": "jeff@cordage.io",
+          "first_name": "Jose",
+          "last_name": "Pamplona",
+          "middle_name": "Luis",
+          "status": "invited",
+          "type": "advanced"
+        }
+      ]
+    },
+    {
+      "address": {
+        "country": "MX",
+        "first_line": "Complejo Industiral, puerta lll",
+        "location": "QRO",
+        "postal_code": "58546",
+        "second_line": "Pasillo 3B",
+        "subdivision": "MX"
+      },
+      "code": "QRO2022",
+      "colors_theme": "dark",
+      "datetime_config": {
+        "date_format": [
+          {
+            "element": "tag",
+            "value": "day_complete"
+          },
+          {
+            "element": "fixed",
+            "value": ", "
+          },
+          {
+            "element": "tag",
+            "value": "month"
+          },
+          {
+            "element": "fixed",
+            "value": " de "
+          },
+          {
+            "element": "tag",
+            "value": "year"
+          }
+        ],
+        "datetime_format": [
+          {
+            "element": "tag",
+            "value": "date"
+          },
+          {
+            "element": "fixed",
+            "value": ", "
+          },
+          {
+            "element": "tag",
+            "value": "time"
+          }
+        ],
+        "time_format": [
+          {
+            "element": "tag",
+            "value": "hour_24"
+          },
+          {
+            "element": "fixed",
+            "value": ":"
+          },
+          {
+            "element": "tag",
+            "value": "minutes"
+          },
+          {
+            "element": "fixed",
+            "value": ":"
+          },
+          {
+            "element": "tag",
+            "value": "seconds"
+          }
+        ]
+      },
+      "description": "Principal Plant",
+      "favicon": {
+        "file_name": "Image.png",
+        "updated_at": "2022-10-05T21:57:02.254352"
+      },
+      "id": "c8f1dddc-4deEEf-4cc8-aae9-adf2858b79dd",
+      "logo": {
+        "file_name": "Image.png",
+        "updated_at": "2022-10-05T21:57:02.254352"
+      },
+      "main": false,
+      "name": "Business Unit Name",
+      "organization": {
+        "country": "MX",
+        "name": "iCorp",
+        "timezone": "America/Mexico_City"
+      },
+      "responsible": {
+        "email": "jeff@cordage.io",
+        "first_name": "Jose",
+        "last_name": "Pamplona",
+        "middle_name": "Luis",
+        "status": "invited",
+        "type": "advanced"
+      },
+      "social_reason": "SOCIAL REASON",
+      "timezone": "America/Mexico_City",
+      "users": [
+        {
+          "email": "jeff@cordage.io",
+          "first_name": "Jose",
+          "last_name": "Pamplona",
+          "middle_name": "Luis",
+          "status": "invited",
+          "type": "advanced"
+        }
+      ]
+    },
+    {
+      "address": {
+        "country": "MX",
+        "first_line": "Complejo Industiral, puerta lll",
+        "location": "QRO",
+        "postal_code": "58546",
+        "second_line": "Pasillo 3B",
+        "subdivision": "MX"
+      },
+      "code": "QRO2022",
+      "colors_theme": "dark",
+      "datetime_config": {
+        "date_format": [
+          {
+            "element": "tag",
+            "value": "day_complete"
+          },
+          {
+            "element": "fixed",
+            "value": ", "
+          },
+          {
+            "element": "tag",
+            "value": "month"
+          },
+          {
+            "element": "fixed",
+            "value": " de "
+          },
+          {
+            "element": "tag",
+            "value": "year"
+          }
+        ],
+        "datetime_format": [
+          {
+            "element": "tag",
+            "value": "date"
+          },
+          {
+            "element": "fixed",
+            "value": ", "
+          },
+          {
+            "element": "tag",
+            "value": "time"
+          }
+        ],
+        "time_format": [
+          {
+            "element": "tag",
+            "value": "hour_24"
+          },
+          {
+            "element": "fixed",
+            "value": ":"
+          },
+          {
+            "element": "tag",
+            "value": "minutes"
+          },
+          {
+            "element": "fixed",
+            "value": ":"
+          },
+          {
+            "element": "tag",
+            "value": "seconds"
+          }
+        ]
+      },
+      "description": "Principal Plant",
+      "favicon": {
+        "file_name": "Image.png",
+        "updated_at": "2022-10-05T21:57:02.254352"
+      },
+      "id": "c8f1dddc-4def-4cc8-aae9FFF-adf2858b79dd",
+      "logo": {
+        "file_name": "Image.png",
+        "updated_at": "2022-10-05T21:57:02.254352"
+      },
+      "main": false,
+      "name": "Business Unit Name",
+      "organization": {
+        "country": "MX",
+        "name": "iCorp",
+        "timezone": "America/Mexico_City"
+      },
+      "responsible": {
+        "email": "jeff@cordage.io",
+        "first_name": "Jose",
+        "last_name": "Pamplona",
+        "middle_name": "Luis",
+        "status": "invited",
+        "type": "advanced"
+      },
+      "social_reason": "SOCIAL REASON",
+      "timezone": "America/Mexico_City",
+      "users": [
+        {
+          "email": "jeff@cordage.io",
+          "first_name": "Jose",
+          "last_name": "Pamplona",
+          "middle_name": "Luis",
+          "status": "invited",
+          "type": "advanced"
+        }
+      ]
+    },
+    {
+      "address": {
+        "country": "MX",
+        "first_line": "Complejo Industiral, puerta lll",
+        "location": "QRO",
+        "postal_code": "58546",
+        "second_line": "Pasillo 3B",
+        "subdivision": "MX"
+      },
+      "code": "QRO2022",
+      "colors_theme": "dark",
+      "datetime_config": {
+        "date_format": [
+          {
+            "element": "tag",
+            "value": "day_complete"
+          },
+          {
+            "element": "fixed",
+            "value": ", "
+          },
+          {
+            "element": "tag",
+            "value": "month"
+          },
+          {
+            "element": "fixed",
+            "value": " de "
+          },
+          {
+            "element": "tag",
+            "value": "year"
+          }
+        ],
+        "datetime_format": [
+          {
+            "element": "tag",
+            "value": "date"
+          },
+          {
+            "element": "fixed",
+            "value": ", "
+          },
+          {
+            "element": "tag",
+            "value": "time"
+          }
+        ],
+        "time_format": [
+          {
+            "element": "tag",
+            "value": "hour_24"
+          },
+          {
+            "element": "fixed",
+            "value": ":"
+          },
+          {
+            "element": "tag",
+            "value": "minutes"
+          },
+          {
+            "element": "fixed",
+            "value": ":"
+          },
+          {
+            "element": "tag",
+            "value": "seconds"
+          }
+        ]
+      },
+      "description": "Principal Plant",
+      "favicon": {
+        "file_name": "Image.png",
+        "updated_at": "2022-10-05T21:57:02.254352"
+      },
+      "id": "c8f1ddVVdc-4def-4cc8-aae9-adf2858b79dd",
+      "logo": {
+        "file_name": "Image.png",
+        "updated_at": "2022-10-05T21:57:02.254352"
+      },
+      "main": false,
+      "name": "Business Unit Name",
+      "organization": {
+        "country": "MX",
+        "name": "iCorp",
+        "timezone": "America/Mexico_City"
+      },
+      "responsible": {
+        "email": "jeff@cordage.io",
+        "first_name": "Jose",
+        "last_name": "Pamplona",
+        "middle_name": "Luis",
+        "status": "invited",
+        "type": "advanced"
+      },
+      "social_reason": "SOCIAL REASON",
+      "timezone": "America/Mexico_City",
+      "users": [
+        {
+          "email": "jeff@cordage.io",
+          "first_name": "Jose",
+          "last_name": "Pamplona",
+          "middle_name": "Luis",
+          "status": "invited",
+          "type": "advanced"
+        }
+      ]
+    },
+    {
+      "address": {
+        "country": "MX",
+        "first_line": "Complejo Industiral, puerta lll",
+        "location": "QRO",
+        "postal_code": "58546",
+        "second_line": "Pasillo 3B",
+        "subdivision": "MX"
+      },
+      "code": "QRO2022",
+      "colors_theme": "dark",
+      "datetime_config": {
+        "date_format": [
+          {
+            "element": "tag",
+            "value": "day_complete"
+          },
+          {
+            "element": "fixed",
+            "value": ", "
+          },
+          {
+            "element": "tag",
+            "value": "month"
+          },
+          {
+            "element": "fixed",
+            "value": " de "
+          },
+          {
+            "element": "tag",
+            "value": "year"
+          }
+        ],
+        "datetime_format": [
+          {
+            "element": "tag",
+            "value": "date"
+          },
+          {
+            "element": "fixed",
+            "value": ", "
+          },
+          {
+            "element": "tag",
+            "value": "time"
+          }
+        ],
+        "time_format": [
+          {
+            "element": "tag",
+            "value": "hour_24"
+          },
+          {
+            "element": "fixed",
+            "value": ":"
+          },
+          {
+            "element": "tag",
+            "value": "minutes"
+          },
+          {
+            "element": "fixed",
+            "value": ":"
+          },
+          {
+            "element": "tag",
+            "value": "seconds"
+          }
+        ]
+      },
+      "description": "Principal Plant",
+      "favicon": {
+        "file_name": "Image.png",
+        "updated_at": "2022-10-05T21:57:02.254352"
+      },
+      "id": "c8f1dddc-4def-4cc8-aae9-adf2858gerb79dd",
+      "logo": {
+        "file_name": "Image.png",
+        "updated_at": "2022-10-05T21:57:02.254352"
+      },
+      "main": false,
+      "name": "Business Unit Name",
+      "organization": {
+        "country": "MX",
+        "name": "iCorp",
+        "timezone": "America/Mexico_City"
+      },
+      "responsible": {
+        "email": "jeff@cordage.io",
+        "first_name": "Jose",
+        "last_name": "Pamplona",
+        "middle_name": "Luis",
+        "status": "invited",
+        "type": "advanced"
+      },
+      "social_reason": "SOCIAL REASON",
+      "timezone": "America/Mexico_City",
+      "users": [
+        {
+          "email": "jeff@cordage.io",
+          "first_name": "Jose",
+          "last_name": "Pamplona",
+          "middle_name": "Luis",
+          "status": "invited",
+          "type": "advanced"
+        }
+      ]
+    },
+    {
+      "address": {
+        "country": "MX",
+        "first_line": "Complejo Industiral, puerta lll",
+        "location": "QRO",
+        "postal_code": "58546",
+        "second_line": "Pasillo 3B",
+        "subdivision": "MX"
+      },
+      "code": "QRO2022",
+      "colors_theme": "dark",
+      "datetime_config": {
+        "date_format": [
+          {
+            "element": "tag",
+            "value": "day_complete"
+          },
+          {
+            "element": "fixed",
+            "value": ", "
+          },
+          {
+            "element": "tag",
+            "value": "month"
+          },
+          {
+            "element": "fixed",
+            "value": " de "
+          },
+          {
+            "element": "tag",
+            "value": "year"
+          }
+        ],
+        "datetime_format": [
+          {
+            "element": "tag",
+            "value": "date"
+          },
+          {
+            "element": "fixed",
+            "value": ", "
+          },
+          {
+            "element": "tag",
+            "value": "time"
+          }
+        ],
+        "time_format": [
+          {
+            "element": "tag",
+            "value": "hour_24"
+          },
+          {
+            "element": "fixed",
+            "value": ":"
+          },
+          {
+            "element": "tag",
+            "value": "minutes"
+          },
+          {
+            "element": "fixed",
+            "value": ":"
+          },
+          {
+            "element": "tag",
+            "value": "seconds"
+          }
+        ]
+      },
+      "description": "Principal Plant",
+      "favicon": {
+        "file_name": "Image.png",
+        "updated_at": "2022-10-05T21:57:02.254352"
+      },
+      "id": "c8f1dddc-4def-4ct34c8-aae9-adf2858b79dd",
+      "logo": {
+        "file_name": "Image.png",
+        "updated_at": "2022-10-05T21:57:02.254352"
+      },
+      "main": false,
+      "name": "Business Unit Name",
+      "organization": {
+        "country": "MX",
+        "name": "iCorp",
+        "timezone": "America/Mexico_City"
+      },
+      "responsible": {
+        "email": "jeff@cordage.io",
+        "first_name": "Jose",
+        "last_name": "Pamplona",
+        "middle_name": "Luis",
+        "status": "invited",
+        "type": "advanced"
+      },
+      "social_reason": "SOCIAL REASON",
+      "timezone": "America/Mexico_City",
+      "users": [
+        {
+          "email": "jeff@cordage.io",
+          "first_name": "Jose",
+          "last_name": "Pamplona",
+          "middle_name": "Luis",
+          "status": "invited",
+          "type": "advanced"
+        }
+      ]
+    },
+    {
+      "address": {
+        "country": "MX",
+        "first_line": "Complejo Industiral, puerta lll",
+        "location": "QRO",
+        "postal_code": "58546",
+        "second_line": "Pasillo 3B",
+        "subdivision": "MX"
+      },
+      "code": "QRO2022",
+      "colors_theme": "dark",
+      "datetime_config": {
+        "date_format": [
+          {
+            "element": "tag",
+            "value": "day_complete"
+          },
+          {
+            "element": "fixed",
+            "value": ", "
+          },
+          {
+            "element": "tag",
+            "value": "month"
+          },
+          {
+            "element": "fixed",
+            "value": " de "
+          },
+          {
+            "element": "tag",
+            "value": "year"
+          }
+        ],
+        "datetime_format": [
+          {
+            "element": "tag",
+            "value": "date"
+          },
+          {
+            "element": "fixed",
+            "value": ", "
+          },
+          {
+            "element": "tag",
+            "value": "time"
+          }
+        ],
+        "time_format": [
+          {
+            "element": "tag",
+            "value": "hour_24"
+          },
+          {
+            "element": "fixed",
+            "value": ":"
+          },
+          {
+            "element": "tag",
+            "value": "minutes"
+          },
+          {
+            "element": "fixed",
+            "value": ":"
+          },
+          {
+            "element": "tag",
+            "value": "seconds"
+          }
+        ]
+      },
+      "description": "Principal Plant",
+      "favicon": {
+        "file_name": "Image.png",
+        "updated_at": "2022-10-05T21:57:02.254352"
+      },
+      "id": "c8f1dt43tddc-4def-4cc8-aae9-adf2858b79dd",
+      "logo": {
+        "file_name": "Image.png",
+        "updated_at": "2022-10-05T21:57:02.254352"
+      },
+      "main": false,
+      "name": "Business Unit Name",
+      "organization": {
+        "country": "MX",
+        "name": "iCorp",
+        "timezone": "America/Mexico_City"
+      },
+      "responsible": {
+        "email": "jeff@cordage.io",
+        "first_name": "Jose",
+        "last_name": "Pamplona",
+        "middle_name": "Luis",
+        "status": "invited",
+        "type": "advanced"
+      },
+      "social_reason": "SOCIAL REASON",
+      "timezone": "America/Mexico_City",
+      "users": [
+        {
+          "email": "jeff@cordage.io",
+          "first_name": "Jose",
+          "last_name": "Pamplona",
+          "middle_name": "Luis",
+          "status": "invited",
+          "type": "advanced"
+        }
+      ]
+    },
+    {
+      "address": {
+        "country": "MX",
+        "first_line": "Complejo Industiral, puerta lll",
+        "location": "QRO",
+        "postal_code": "58546",
+        "second_line": "Pasillo 3B",
+        "subdivision": "MX"
+      },
+      "code": "QRO2022",
+      "colors_theme": "dark",
+      "datetime_config": {
+        "date_format": [
+          {
+            "element": "tag",
+            "value": "day_complete"
+          },
+          {
+            "element": "fixed",
+            "value": ", "
+          },
+          {
+            "element": "tag",
+            "value": "month"
+          },
+          {
+            "element": "fixed",
+            "value": " de "
+          },
+          {
+            "element": "tag",
+            "value": "year"
+          }
+        ],
+        "datetime_format": [
+          {
+            "element": "tag",
+            "value": "date"
+          },
+          {
+            "element": "fixed",
+            "value": ", "
+          },
+          {
+            "element": "tag",
+            "value": "time"
+          }
+        ],
+        "time_format": [
+          {
+            "element": "tag",
+            "value": "hour_24"
+          },
+          {
+            "element": "fixed",
+            "value": ":"
+          },
+          {
+            "element": "tag",
+            "value": "minutes"
+          },
+          {
+            "element": "fixed",
+            "value": ":"
+          },
+          {
+            "element": "tag",
+            "value": "seconds"
+          }
+        ]
+      },
+      "description": "Principal Plant",
+      "favicon": {
+        "file_name": "Image.png",
+        "updated_at": "2022-10-05T21:57:02.254352"
+      },
+      "id": "c8f1dddc-4def-4ct-aae9-adf2858b7t39dd",
+      "logo": {
+        "file_name": "Image.png",
+        "updated_at": "2022-10-05T21:57:02.254352"
+      },
+      "main": false,
+      "name": "Business Unit Name",
+      "organization": {
+        "country": "MX",
+        "name": "iCorp",
+        "timezone": "America/Mexico_City"
+      },
+      "responsible": {
+        "email": "jeff@cordage.io",
+        "first_name": "Jose",
+        "last_name": "Pamplona",
+        "middle_name": "Luis",
+        "status": "invited",
+        "type": "advanced"
+      },
+      "social_reason": "SOCIAL REASON",
+      "timezone": "America/Mexico_City",
+      "users": [
+        {
+          "email": "jeff@cordage.io",
+          "first_name": "Jose",
+          "last_name": "Pamplona",
+          "middle_name": "Luis",
+          "status": "invited",
+          "type": "advanced"
+        }
+      ]
+    },
+    {
+      "address": {
+        "country": "MX",
+        "first_line": "Complejo Industiral, puerta lll",
+        "location": "QRO",
+        "postal_code": "58546",
+        "second_line": "Pasillo 3B",
+        "subdivision": "MX"
+      },
+      "code": "QRO2022",
+      "colors_theme": "dark",
+      "datetime_config": {
+        "date_format": [
+          {
+            "element": "tag",
+            "value": "day_complete"
+          },
+          {
+            "element": "fixed",
+            "value": ", "
+          },
+          {
+            "element": "tag",
+            "value": "month"
+          },
+          {
+            "element": "fixed",
+            "value": " de "
+          },
+          {
+            "element": "tag",
+            "value": "year"
+          }
+        ],
+        "datetime_format": [
+          {
+            "element": "tag",
+            "value": "date"
+          },
+          {
+            "element": "fixed",
+            "value": ", "
+          },
+          {
+            "element": "tag",
+            "value": "time"
+          }
+        ],
+        "time_format": [
+          {
+            "element": "tag",
+            "value": "hour_24"
+          },
+          {
+            "element": "fixed",
+            "value": ":"
+          },
+          {
+            "element": "tag",
+            "value": "minutes"
+          },
+          {
+            "element": "fixed",
+            "value": ":"
+          },
+          {
+            "element": "tag",
+            "value": "seconds"
+          }
+        ]
+      },
+      "description": "Principal Plant",
+      "favicon": {
+        "file_name": "Image.png",
+        "updated_at": "2022-10-05T21:57:02.254352"
+      },
+      "id": "c8f1dddc-4t36def-4cc8-aae9-adf26858b79dd",
+      "logo": {
+        "file_name": "Image.png",
+        "updated_at": "2022-10-05T21:57:02.254352"
+      },
+      "main": false,
+      "name": "Business Unit Name",
+      "organization": {
+        "country": "MX",
+        "name": "iCorp",
+        "timezone": "America/Mexico_City"
+      },
+      "responsible": {
+        "email": "jeff@cordage.io",
+        "first_name": "Jose",
+        "last_name": "Pamplona",
+        "middle_name": "Luis",
+        "status": "invited",
+        "type": "advanced"
+      },
+      "social_reason": "SOCIAL REASON",
+      "timezone": "America/Mexico_City",
+      "users": [
+        {
+          "email": "jeff@cordage.io",
+          "first_name": "Jose",
+          "last_name": "Pamplona",
+          "middle_name": "Luis",
+          "status": "invited",
+          "type": "advanced"
+        }
+      ]
+    },{
+      "address": {
+        "country": "MX",
+        "first_line": "Complejo Industiral, puerta lll",
+        "location": "QRO",
+        "postal_code": "58546",
+        "second_line": "Pasillo 3B",
+        "subdivision": "MX"
+      },
+      "code": "QRO2022",
+      "colors_theme": "dark",
+      "datetime_config": {
+        "date_format": [
+          {
+            "element": "tag",
+            "value": "day_complete"
+          },
+          {
+            "element": "fixed",
+            "value": ", "
+          },
+          {
+            "element": "tag",
+            "value": "month"
+          },
+          {
+            "element": "fixed",
+            "value": " de "
+          },
+          {
+            "element": "tag",
+            "value": "year"
+          }
+        ],
+        "datetime_format": [
+          {
+            "element": "tag",
+            "value": "date"
+          },
+          {
+            "element": "fixed",
+            "value": ", "
+          },
+          {
+            "element": "tag",
+            "value": "time"
+          }
+        ],
+        "time_format": [
+          {
+            "element": "tag",
+            "value": "hour_24"
+          },
+          {
+            "element": "fixed",
+            "value": ":"
+          },
+          {
+            "element": "tag",
+            "value": "minutes"
+          },
+          {
+            "element": "fixed",
+            "value": ":"
+          },
+          {
+            "element": "tag",
+            "value": "seconds"
+          }
+        ]
+      },
+      "description": "Principal Plant",
+      "favicon": {
+        "file_name": "Image.png",
+        "updated_at": "2022-10-05T21:57:02.254352"
+      },
+      "id": "c8f1dddc-4def-4cc8-aae9-adf2858t5b79dd",
+      "logo": {
+        "file_name": "Image.png",
+        "updated_at": "2022-10-05T21:57:02.254352"
+      },
+      "main": false,
+      "name": "Business Unit Name",
+      "organization": {
+        "country": "MX",
+        "name": "iCorp",
+        "timezone": "America/Mexico_City"
+      },
+      "responsible": {
+        "email": "jeff@cordage.io",
+        "first_name": "Jose",
+        "last_name": "Pamplona",
+        "middle_name": "Luis",
+        "status": "invited",
+        "type": "advanced"
+      },
+      "social_reason": "SOCIAL REASON",
+      "timezone": "America/Mexico_City",
+      "users": [
+        {
+          "email": "jeff@cordage.io",
+          "first_name": "Jose",
+          "last_name": "Pamplona",
+          "middle_name": "Luis",
+          "status": "invited",
+          "type": "advanced"
+        }
+      ]
+    },
+    {
+      "address": {
+        "country": "MX",
+        "first_line": "Complejo Industiral, puerta lll",
+        "location": "QRO",
+        "postal_code": "58546",
+        "second_line": "Pasillo 3B",
+        "subdivision": "MX"
+      },
+      "code": "QRO2022",
+      "colors_theme": "dark",
+      "datetime_config": {
+        "date_format": [
+          {
+            "element": "tag",
+            "value": "day_complete"
+          },
+          {
+            "element": "fixed",
+            "value": ", "
+          },
+          {
+            "element": "tag",
+            "value": "month"
+          },
+          {
+            "element": "fixed",
+            "value": " de "
+          },
+          {
+            "element": "tag",
+            "value": "year"
+          }
+        ],
+        "datetime_format": [
+          {
+            "element": "tag",
+            "value": "date"
+          },
+          {
+            "element": "fixed",
+            "value": ", "
+          },
+          {
+            "element": "tag",
+            "value": "time"
+          }
+        ],
+        "time_format": [
+          {
+            "element": "tag",
+            "value": "hour_24"
+          },
+          {
+            "element": "fixed",
+            "value": ":"
+          },
+          {
+            "element": "tag",
+            "value": "minutes"
+          },
+          {
+            "element": "fixed",
+            "value": ":"
+          },
+          {
+            "element": "tag",
+            "value": "seconds"
+          }
+        ]
+      },
+      "description": "Principal Plant",
+      "favicon": {
+        "file_name": "Image.png",
+        "updated_at": "2022-10-05T21:57:02.254352"
+      },
+      "id": "c8f1dddc-4def-4cc8-aae9-adf2858b7t9dd",
+      "logo": {
+        "file_name": "Image.png",
+        "updated_at": "2022-10-05T21:57:02.254352"
+      },
+      "main": false,
+      "name": "Business Unit Name",
+      "organization": {
+        "country": "MX",
+        "name": "iCorp",
+        "timezone": "America/Mexico_City"
+      },
+      "responsible": {
+        "email": "jeff@cordage.io",
+        "first_name": "Jose",
+        "last_name": "Pamplona",
+        "middle_name": "Luis",
+        "status": "invited",
+        "type": "advanced"
+      },
+      "social_reason": "SOCIAL REASON",
+      "timezone": "America/Mexico_City",
+      "users": [
+        {
+          "email": "jeff@cordage.io",
+          "first_name": "Jose",
+          "last_name": "Pamplona",
+          "middle_name": "Luis",
+          "status": "invited",
+          "type": "advanced"
+        }
+      ]
+    },
+    {
+      "address": {
+        "country": "MX",
+        "first_line": "Complejo Industiral, puerta lll",
+        "location": "QRO",
+        "postal_code": "58546",
+        "second_line": "Pasillo 3B",
+        "subdivision": "MX"
+      },
+      "code": "QRO2022",
+      "colors_theme": "dark",
+      "datetime_config": {
+        "date_format": [
+          {
+            "element": "tag",
+            "value": "day_complete"
+          },
+          {
+            "element": "fixed",
+            "value": ", "
+          },
+          {
+            "element": "tag",
+            "value": "month"
+          },
+          {
+            "element": "fixed",
+            "value": " de "
+          },
+          {
+            "element": "tag",
+            "value": "year"
+          }
+        ],
+        "datetime_format": [
+          {
+            "element": "tag",
+            "value": "date"
+          },
+          {
+            "element": "fixed",
+            "value": ", "
+          },
+          {
+            "element": "tag",
+            "value": "time"
+          }
+        ],
+        "time_format": [
+          {
+            "element": "tag",
+            "value": "hour_24"
+          },
+          {
+            "element": "fixed",
+            "value": ":"
+          },
+          {
+            "element": "tag",
+            "value": "minutes"
+          },
+          {
+            "element": "fixed",
+            "value": ":"
+          },
+          {
+            "element": "tag",
+            "value": "seconds"
+          }
+        ]
+      },
+      "description": "Principal Plant",
+      "favicon": {
+        "file_name": "Image.png",
+        "updated_at": "2022-10-05T21:57:02.254352"
+      },
+      "id": "c8f1ddd3c-4def-4cc8-aae9-adf2858b79dd",
+      "logo": {
+        "file_name": "Image.png",
+        "updated_at": "2022-10-05T21:57:02.254352"
+      },
+      "main": false,
+      "name": "Business Unit Name",
+      "organization": {
+        "country": "MX",
+        "name": "iCorp",
+        "timezone": "America/Mexico_City"
+      },
+      "responsible": {
+        "email": "jeff@cordage.io",
+        "first_name": "Jose",
+        "last_name": "Pamplona",
+        "middle_name": "Luis",
+        "status": "invited",
+        "type": "advanced"
+      },
+      "social_reason": "SOCIAL REASON",
+      "timezone": "America/Mexico_City",
+      "users": [
+        {
+          "email": "jeff@cordage.io",
+          "first_name": "Jose",
+          "last_name": "Pamplona",
+          "middle_name": "Luis",
+          "status": "invited",
+          "type": "advanced"
+        }
+      ]
+    }
+]
