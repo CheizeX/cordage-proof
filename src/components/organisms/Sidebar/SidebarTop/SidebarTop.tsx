@@ -1,21 +1,29 @@
 import * as S from "./SidebarTop.styles";
 import Text from "../../../atoms/Text/Text";
 import { theme } from "../../../../themes/theme";
+import { ReactSVG } from "react-svg";
+import Avatar from "../../../atoms/Avatar/Avatar";
 
 const SidebarTop = () => {
   return (
     <S.StyledSidebarTop>
-      <div>
-        <div>A</div>
-        <div>
-          <Text
-            color={theme.colors["--white"]}
-            size={theme.fontSizes["text-xs"]}
-            weight='700'>
+      <S.StyledOrganizationInfoContainer>
+        <Avatar text='A' backgroundColor={theme.colors["--orange600"]} />
+        <S.StyledOrganizationInfo>
+          <Text color={theme.colors["--white"]} weight='700'>
             Fedex Corporation
           </Text>
-        </div>
-      </div>
+          <span>
+            <Text
+              size='0.875rem'
+              color={theme.colors["--neutral400"]}
+              weight='500'>
+              Head Quarters
+            </Text>
+            <ReactSVG src='/ChevronLeft.svg' />
+          </span>
+        </S.StyledOrganizationInfo>
+      </S.StyledOrganizationInfoContainer>
     </S.StyledSidebarTop>
   );
 };

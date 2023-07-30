@@ -1,6 +1,7 @@
 import * as S from "./AppBar.styles";
 import IconButton from "../../molecules/IconButton/IconButton";
 import { navbarItems } from "./AppBar.shared";
+import Avatar from "../../atoms/Avatar/Avatar";
 
 const AppBar = () => {
   return (
@@ -20,7 +21,7 @@ const AppBar = () => {
             />
           ))}
         </S.StyledNavbar>
-        <img src='/images/Avatar.png' alt='user avatar' />
+        <Avatar image='/images/Avatar.png' alt='user avatar' size={40} />
       </S.StyledAppBarRightSide>
     </S.StyledAppBar>
   );
