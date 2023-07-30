@@ -173,5 +173,13 @@ export const GlobalStyleCordage = createGlobalStyle`
     html{
         font-size: 62.5%; 
     } 
+
+    button {
+        border:none;
+        cursor:pointer;
+        &:active{
+            opacity: 1;
+        }
+    }
     
-`
+`;

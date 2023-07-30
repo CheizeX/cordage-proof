@@ -2,7 +2,7 @@ import { FC } from "react";
 import { IconButtonProps } from "./IconButton.interface";
 import * as S from "./IconButton.styles";
 
-const IconButton: FC<IconButtonProps> = ({ icon, onClick }) => {
+const IconButton: FC<IconButtonProps> = ({ icon, onClick, color, status }) => {
   const handleClick = () => {
     if (onClick) {
       onClick();
@@ -13,7 +13,8 @@ const IconButton: FC<IconButtonProps> = ({ icon, onClick }) => {
 
   return (
     <S.StyledButton onClick={handleClick}>
-      <S.StyledIcon src={icon} alt='' />
+      <S.StyledIcon src={icon} color={color} />
+      <S.StyledStatusIndicator status={status} />
     </S.StyledButton>
   );
 };
