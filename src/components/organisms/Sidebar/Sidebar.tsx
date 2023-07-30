@@ -22,8 +22,9 @@ const Sidebar = () => {
           onClick={handleCollapse}
         />
       </S.StyledCollapseButtonContainer>
-
-      <SidebarTop />
+      <S.StyledSidebarBox isCollapsed={isCollapsed}>
+        <SidebarTop />
+      </S.StyledSidebarBox>
     </S.StyledSidebar>
   );
 };

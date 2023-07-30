@@ -6,10 +6,20 @@ export const StyledSidebar = styled.aside<SidebarProps>`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: ${(props) => (props.isCollapsed ? "24px" : "256px")};
+  width: 256px;
   height: 100%;
   background: ${(props) => props.theme.colors["--neutral900"]};
   transition: 0.3s;
+  transform: ${(props) =>
+    props.isCollapsed ? "translateX(-232px)" : "translateX(0px)"};
+`;
+
+export const StyledSidebarBox = styled.div<SidebarProps>`
+  width: 100%;
+  min-height: 100%;
+  flex-direction: column;
+  opacity: ${(props) => (props.isCollapsed ? "0" : "1")};
+  transition: 1s;
 `;
 
 export const StyledCollapseButtonContainer = styled.div<SidebarProps>`
@@ -22,4 +32,5 @@ export const StyledCollapseButtonContainer = styled.div<SidebarProps>`
   transition: 0.6s;
   transform: ${(props) =>
     props.isCollapsed ? "rotate(180deg)" : "rotate(0deg)"};
+  transition: 0.3s;
 `;
