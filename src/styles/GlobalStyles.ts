@@ -163,7 +163,7 @@ export const GlobalStyleCordage = createGlobalStyle`
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        font-family: "Satoshi-Variable";
+        font-family: "Monospace";
         /* -webkit-user-select: none;
         -moz-user-select: none;
         -ms-user-select: none;
