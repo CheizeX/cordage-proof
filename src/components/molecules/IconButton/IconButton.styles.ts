@@ -1,18 +1,17 @@
 import styled, { css } from "styled-components";
 import { ReactSVG } from "react-svg";
+import { IconButtonProps } from "./IconButton.interface";
 
-export const StyledButton = styled.button`
+export const StyledButton = styled.button<Omit<IconButtonProps, "icon">>`
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
-  background-color: transparent;
-  /* padding: 8px; */
-  &:hover {
-    opacity: 0.8;
-  }
+  width: ${(props) => (props.width ? props.width : "40px")};
+  height: ${(props) => (props.height ? props.height : "40px")};
+  background-color: ${(props) =>
+    props.backgroundColor ? props.backgroundColor : "transparent"};
+  border-radius: ${(props) => (props.radius ? props.radius : "50%")};
 `;
 
 export const StyledIcon = styled(ReactSVG)<{
