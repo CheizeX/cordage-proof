@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledMainLayout = styled.div`
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -12,7 +12,7 @@ export const StyledMainLayout = styled.div`
 `;
 
 export const StyledMainContentContainer = styled.main`
-  border: 1px solid green;
+  /* border: 1px solid green; */
   width: 100%;
   max-width: 100vw;
   height: calc(100vh - 64px);
