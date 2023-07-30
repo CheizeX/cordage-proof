@@ -9,7 +9,7 @@ interface TextProps {
 }
 
 const Text = styled.p<TextProps>`
-  font-family: ${(props) => props.family ?? props.theme.fonts["--fontA"]};
+  font-family: ${(props) => props.family ?? "Satoshi-Variable"};
   font-size: ${(props) => props.size ?? "1.6rem"};
   color: ${(props) => props.color ?? theme.colors["--neutral800"]};
   font-weight: ${(props) => props.weight ?? "400"};
