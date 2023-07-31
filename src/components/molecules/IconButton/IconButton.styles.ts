@@ -1,5 +1,4 @@
-import styled, { css } from "styled-components";
-import { ReactSVG } from "react-svg";
+import styled from "styled-components";
 import { IconButtonProps } from "./IconButton.interface";
 
 export const StyledButton = styled.button<Omit<IconButtonProps, "icon">>`
@@ -12,35 +11,6 @@ export const StyledButton = styled.button<Omit<IconButtonProps, "icon">>`
   background-color: ${(props) =>
     props.backgroundColor ? props.backgroundColor : "transparent"};
   border-radius: ${(props) => (props.radius ? props.radius : "50%")};
-`;
-
-export const StyledIcon = styled(ReactSVG)<{
-  color?: string;
-}>`
-  width: 24px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  & > div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    & > svg {
-      & > g {
-        & > path {
-          ${(props) =>
-            props.color &&
-            css`
-              stroke-width: 1.5px;
-              stroke: ${props.color};
-            `}
-        }
-      }
-    }
-  }
 `;
 
 export const StyledStatusIndicator = styled.div<{
