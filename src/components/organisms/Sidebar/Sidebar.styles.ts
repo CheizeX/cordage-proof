@@ -33,4 +33,5 @@ export const StyledCollapseButtonContainer = styled.div<SidebarProps>`
   transform: ${(props) =>
     props.isCollapsed ? "rotate(180deg)" : "rotate(0deg)"};
   transition: 0.3s;
+  z-index: 1;
 `;
