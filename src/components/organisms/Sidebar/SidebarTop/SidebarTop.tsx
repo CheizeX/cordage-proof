@@ -5,12 +5,44 @@ import { ReactSVG } from "react-svg";
 import Avatar from "../../../atoms/Avatar/Avatar";
 import { FC } from "react";
 import { SidebarBodyProps } from "../Sidebar.interface";
+import IconAtom from "../../../atoms/IconAtom/IconAtom";
+import { sidebarItems } from "../Sidebar.shared";
+import { MainProps } from "../../../templates/MainLayout/MainLayout.interface";
 
-const SidebarTop: FC<SidebarBodyProps> = ({ stateMachine }) => {
+const SidebarTop: FC<MainProps & SidebarBodyProps> = ({
+  stateMachine,
+  setStateMachine,
+  setActiveContent,
+}) => {
   return (
     <S.StyledSidebarTop>
       {stateMachine.activeSubmenu ? (
-        <div>ACTIVE SUBMENU</div>
+        <S.StyledSubmenuContainer>
+          <button
+            type='button'
+            onClick={() => {
+              setStateMachine({
+                ...stateMachine,
+                activeSubmenu: null,
+                group: sidebarItems,
+              });
+              setActiveContent(null);
+            }}>
+            <IconAtom icon='/ChevronLeft.svg' iconSize='14px' />
+            <Text
+              color={theme.colors["--orange600"]}
+              size='0.875rem'
+              weight='700'>
+              Main Menu
+            </Text>
+          </button>
+          <div>
+            <IconAtom icon={`/${stateMachine.activeSubmenu.icon}.svg`} />
+            <Text color={theme.colors["--white"]} size='1rem' weight='700'>
+              {stateMachine.activeSubmenu.name}
+            </Text>
+          </div>
+        </S.StyledSubmenuContainer>
       ) : (
         <S.StyledOrganizationInfoContainer>
           <Avatar text='A' backgroundColor={theme.colors["--orange600"]} />

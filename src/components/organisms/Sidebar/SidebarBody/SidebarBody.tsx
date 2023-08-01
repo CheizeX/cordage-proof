@@ -4,8 +4,17 @@ import { theme } from "../../../../themes/theme";
 import SidebarItem from "../../../molecules/SidebarItem/SidebarItem";
 import { FC } from "react";
 import { SidebarBodyProps } from "../Sidebar.interface";
+import { MainProps } from "../../../templates/MainLayout/MainLayout.interface";
 
-const SidebarBody: FC<SidebarBodyProps> = ({ stateMachine }) => {
+const SidebarBody: FC<MainProps & SidebarBodyProps> = ({
+  stateMachine,
+  setStateMachine,
+  activeContent,
+  setActiveContent,
+}) => {
+  console.log({
+    activeContent,
+  });
   return (
     <S.StyledSidebarBody>
       {stateMachine.group.body.map((item, index) => (
@@ -21,11 +30,33 @@ const SidebarBody: FC<SidebarBodyProps> = ({ stateMachine }) => {
 
           {item.items.map((nested) => (
             <SidebarItem
+              selected={activeContent === nested.name}
               icon={nested.icon ? `/${nested.icon}.svg` : undefined}
               color={theme.colors["--neutral300"]}
               size={theme.fontSizes["text-xs"]}
               weight='400'
               text={nested.name}
+              onClick={() => {
+                setActiveContent(nested.name);
+                {
+                  console.log(nested.name, "name");
+                }
+                nested.body
+                  ? setStateMachine({
+                      ...stateMachine,
+                      activeSubmenu: {
+                        ...stateMachine.activeSubmenu,
+                        name: nested.name,
+                        icon: nested.icon,
+                      },
+                      group: {
+                        ...stateMachine.group,
+                        body: nested.body ? nested.body : [],
+                        footer: nested.footer ? nested.footer : [],
+                      },
+                    })
+                  : null;
+              }}
             />
           ))}
         </S.StyledSidebarBodyItemsBox>

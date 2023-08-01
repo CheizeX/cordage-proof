@@ -5,6 +5,7 @@ import IconAtom from "../../atoms/IconAtom/IconAtom";
 
 const IconButton: FC<IconButtonProps> = ({
   icon,
+  iconSize,
   onClick,
   color,
   status,
@@ -28,7 +29,7 @@ const IconButton: FC<IconButtonProps> = ({
       height={height}
       width={width}
       backgroundColor={backgroundColor}>
-      <IconAtom icon={icon} color={color} />
+      <IconAtom icon={icon} color={color} iconSize={iconSize} />
       <S.StyledStatusIndicator status={status} />
     </S.StyledButton>
   );

@@ -8,6 +8,10 @@ export interface SidebarProps {
 interface SidebarItem {
   name: string;
   icon?: string;
+  alterIcon?: string;
+  body?: SidebarSection[];
+  footer?: SidebarItem[];
+  notification?: boolean;
 }
 
 interface SidebarBodyItem extends SidebarItem {
@@ -28,9 +32,14 @@ export interface SidebarItems {
   footer: SidebarItem[];
 }
 
-export interface SidebarBodyProps {
-  stateMachine: {
-    group: SidebarItems;
-    activeSubmenu: null | string;
+export type StateMachineProps = {
+  group: SidebarItems;
+  activeSubmenu: null | {
+    name: string;
+    icon?: string;
   };
+};
+export interface SidebarBodyProps {
+  stateMachine: StateMachineProps;
+  setStateMachine: Dispatch<SetStateAction<StateMachineProps>>;
 }

@@ -101,7 +101,50 @@ export const sidebarItems: SidebarItems = {
   footer: [
     {
       name: "Org. Structure",
+      alterIcon: "OrgStructureColor",
       icon: "OrgStructure",
+      body: [
+        {
+          title: "ELEMENTS",
+          items: [
+            {
+              name: "Organization",
+              icon: "Organization",
+            },
+            {
+              name: "Business Units",
+              icon: "BusinessUnits",
+            },
+            {
+              name: "Organizational Units",
+              icon: "OrganizationalUnits",
+            },
+            {
+              name: "Lists & Groups",
+              icon: "ListsAndGroups",
+            },
+            {
+              name: "Job Titles",
+              icon: "JobTitles",
+            },
+            {
+              name: "Users",
+              icon: "Users",
+            },
+          ],
+        },
+      ],
+      footer: [
+        {
+          name: "Organizational Chart",
+          icon: "OrganizationalChart",
+        },
+        {
+          name: "View Tour",
+          icon: "ProductTour",
+          notification: true,
+        },
+      ],
     },
     {
       name: "Workspace",
