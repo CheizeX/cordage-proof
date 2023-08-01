@@ -10,7 +10,7 @@ const MainContent: FC<MainProps> = ({
 }) => {
   return (
     <S.StyledMainContentSection isCollapsed={isCollapsed}>
-      MainContent
+      This is the MainContent
     </S.StyledMainContentSection>
   );
 };
