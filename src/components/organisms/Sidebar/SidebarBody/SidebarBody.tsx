@@ -6,7 +6,7 @@ import { FC } from "react";
 import { SidebarBodyProps } from "../Sidebar.interface";
 import { MainProps } from "../../../templates/MainLayout/MainLayout.interface";
 
-const SidebarBody: FC<MainProps & SidebarBodyProps> = ({
+const SidebarBody: FC<Partial<MainProps> & SidebarBodyProps> = ({
   stateMachine,
   setStateMachine,
   activeContent,

@@ -9,8 +9,12 @@ import { sidebarItems } from "./Sidebar.shared";
 import { SidebarItems, StateMachineProps } from "./Sidebar.interface";
 import { MainProps } from "../../templates/MainLayout/MainLayout.interface";
 
-const Sidebar: FC<MainProps> = ({ activeContent, setActiveContent }) => {
-  const [isCollapsed, setIsCollapsed] = useState<boolean>(false);
+const Sidebar: FC<MainProps> = ({
+  activeContent,
+  setActiveContent,
+  isCollapsed,
+  setIsCollapsed,
+}) => {
   const [stateMachine, setStateMachine] = useState<StateMachineProps>({
     group: sidebarItems as SidebarItems,
     activeSubmenu: null,
