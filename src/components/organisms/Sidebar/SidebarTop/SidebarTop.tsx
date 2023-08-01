@@ -9,7 +9,7 @@ import IconAtom from "../../../atoms/IconAtom/IconAtom";
 import { sidebarItems } from "../Sidebar.shared";
 import { MainProps } from "../../../templates/MainLayout/MainLayout.interface";
 
-const SidebarTop: FC<MainProps & SidebarBodyProps> = ({
+const SidebarTop: FC<Partial<MainProps> & SidebarBodyProps> = ({
   stateMachine,
   setStateMachine,
   setActiveContent,
@@ -26,7 +26,7 @@ const SidebarTop: FC<MainProps & SidebarBodyProps> = ({
                 activeSubmenu: null,
                 group: sidebarItems,
               });
-              setActiveContent(null);
+              setActiveContent && setActiveContent(null);
             }}>
             <IconAtom icon='/ChevronLeft.svg' iconSize='14px' />
             <Text

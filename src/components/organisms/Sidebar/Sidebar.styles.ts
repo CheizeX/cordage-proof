@@ -6,7 +6,8 @@ export const StyledSidebar = styled.aside<SidebarProps>`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 256px;
+  min-width: 256px;
+  max-width: 256px;
   height: 100%;
   background: ${(props) => props.theme.colors["--neutral900"]};
   transition: 0.3s;
@@ -19,7 +20,7 @@ export const StyledSidebarBox = styled.div<SidebarProps>`
   min-height: 100%;
   flex-direction: column;
   opacity: ${(props) => (props.isCollapsed ? "0" : "1")};
-  transition: 1s;
+  transition: 0.1s;
 `;
 
 export const StyledCollapseButtonContainer = styled.div<SidebarProps>`

@@ -13,6 +13,7 @@ export const StyledMainLayout = styled.div`
 
 export const StyledMainContentContainer = styled.main`
   /* border: 1px solid green; */
+  display: flex;
   width: 100%;
   max-width: 100vw;
   height: calc(100vh - 64px);
