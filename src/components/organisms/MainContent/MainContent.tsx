@@ -3,10 +3,10 @@ import * as S from "./MainContent.styles";
 import { MainProps } from "../../templates/MainLayout/MainLayout.interface";
 
 const MainContent: FC<MainProps> = ({
-  activeContent,
-  setActiveContent,
+  // activeContent,
+  // setActiveContent,
   isCollapsed,
-  setIsCollapsed,
+  // setIsCollapsed,
 }) => {
   return (
     <S.StyledMainContentSection isCollapsed={isCollapsed}>

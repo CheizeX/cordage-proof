@@ -37,7 +37,7 @@ const SidebarBody: FC<Partial<MainProps> & SidebarBodyProps> = ({
               weight='400'
               text={nested.name}
               onClick={() => {
-                setActiveContent(nested.name);
+                setActiveContent && setActiveContent(nested.name);
                 {
                   console.log(nested.name, "name");
                 }
