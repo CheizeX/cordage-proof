@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-expressions */
 import * as S from "./SidebarBody.styles";
 import Text from "../../../atoms/Text/Text";
 import { theme } from "../../../../themes/theme";
@@ -30,17 +31,19 @@ const SidebarBody: FC<Partial<MainProps> & SidebarBodyProps> = ({
 
           {item.items.map((nested) => (
             <SidebarItem
-              selected={activeContent === nested.name}
+              selected={activeContent?.name === nested.name}
               icon={nested.icon ? `/${nested.icon}.svg` : undefined}
               color={theme.colors["--neutral300"]}
               size={theme.fontSizes["text-xs"]}
               weight='400'
               text={nested.name}
               onClick={() => {
-                setActiveContent && setActiveContent(nested.name);
-                {
-                  console.log(nested.name, "name");
-                }
+                setActiveContent &&
+                  setActiveContent({
+                    name: nested?.name,
+                    icon: `/${nested.icon}.svg` ?? "",
+                  });
+
                 nested.body
                   ? setStateMachine({
                       ...stateMachine,

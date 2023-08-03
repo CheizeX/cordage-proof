@@ -6,7 +6,7 @@ import MainContent from "../../organisms/MainContent/MainContent";
 import WidgetBar from "../../organisms/WidgetBar/WidgetBar";
 
 const MainLayout: FC = () => {
-  const [activeContent, setActiveContent] = useState<string | null>(null);
+  const [activeContent, setActiveContent] = useState<any>(null);
   const [isCollapsed, setIsCollapsed] = useState<boolean>(false);
 
   return (
