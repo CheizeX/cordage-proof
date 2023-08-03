@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-expressions */
 import { FC } from "react";
 import { theme } from "../../../../themes/theme";
 import SidebarItem from "../../../molecules/SidebarItem/SidebarItem";
