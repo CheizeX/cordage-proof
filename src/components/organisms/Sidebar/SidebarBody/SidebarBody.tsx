@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-expressions */
 import * as S from "./SidebarBody.styles";
 import Text from "../../../atoms/Text/Text";
 import { theme } from "../../../../themes/theme";
@@ -42,9 +43,7 @@ const SidebarBody: FC<Partial<MainProps> & SidebarBodyProps> = ({
                     name: nested?.name,
                     icon: `/${nested.icon}.svg` ?? "",
                   });
-                {
-                  console.log(nested.name, "name");
-                }
+
                 nested.body
                   ? setStateMachine({
                       ...stateMachine,
