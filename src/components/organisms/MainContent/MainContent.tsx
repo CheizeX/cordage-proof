@@ -189,7 +189,7 @@ const MainContent: FC<MainProps> = ({
                   backgroundColor={randomColor(i)}
                 />
                 <div>
-                  <S.StyledCellContent weight='800'>
+                  <S.StyledCellContent size='12px' weight='600'>
                     {item.description}
                   </S.StyledCellContent>
                   <S.StyledCellContent color={theme.colors["--neutral500"]}>
@@ -322,7 +322,7 @@ const MainContent: FC<MainProps> = ({
               />
             </div>
             <span>
-              {Array.from(Array(totalPages), (e, i) => {
+              {Array.from(Array(totalPages), (_, i) => {
                 return (
                   <S.StyledPageNumber
                     key={i}
