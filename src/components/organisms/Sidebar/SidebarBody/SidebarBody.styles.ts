@@ -11,6 +11,7 @@ export const StyledSidebarBody = styled.div`
   padding: 16px 0px;
   border-bottom: 1px solid ${(props) => props.theme.colors["--neutral700"]};
   border-top: 1px solid ${(props) => props.theme.colors["--neutral700"]};
+  overflow: auto;
 `;
 
 export const StyledSidebarBodyItemsBox = styled.div`
