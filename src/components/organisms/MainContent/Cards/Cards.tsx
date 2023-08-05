@@ -34,7 +34,9 @@ const Cards: FC<any> = ({ randomColor, search }) => {
     <S.StyledCardsContainer>
       {currentPageData.map((item: any, index: number) => (
         <S.StyledCard key={index} color={randomColor(index)}>
-          <S.StyledCardHeader></S.StyledCardHeader>
+          <S.StyledCardHeader>
+            <div>{item.name}</div>
+          </S.StyledCardHeader>
           {/* <S.StyledCardBody>
           <S.StyledCardBodyText>{item.description}</S.StyledCardBodyText>
         </S.StyledCardBody> */}
