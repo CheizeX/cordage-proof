@@ -9,6 +9,7 @@ export const StyledSidebar = styled.aside<SidebarProps>`
   min-width: 256px;
   max-width: 256px;
   height: 100%;
+  min-height: calc(100vh - 60px);
   background: ${(props) => props.theme.colors["--neutral900"]};
   transition: 0.3s;
   transform: ${(props) =>
