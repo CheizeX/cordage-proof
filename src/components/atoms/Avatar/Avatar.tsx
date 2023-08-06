@@ -18,7 +18,7 @@ const Avatar: React.FC<AvatarProps> = ({
   image,
   alt,
   size,
-  backgroundColor,
+  backgroundcolor,
   color,
   outlined,
   shadow,
@@ -28,7 +28,7 @@ const Avatar: React.FC<AvatarProps> = ({
     return (
       <S.StyledAvatarWrapper
         size={size}
-        backgroundColor={backgroundColor}
+        backgroundcolor={backgroundcolor}
         color={color}
         shadow={shadow}
         star={star}
@@ -42,7 +42,7 @@ const Avatar: React.FC<AvatarProps> = ({
     return (
       <S.StyledAvatarWrapper
         size={size}
-        backgroundColor={backgroundColor}
+        backgroundcolor={backgroundcolor}
         color={color}
         shadow={shadow}
         star={star}

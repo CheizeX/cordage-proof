@@ -1,7 +1,7 @@
 import { Dispatch, SetStateAction } from "react";
 
 export interface SidebarProps {
-  isCollapsed: boolean;
+  iscollapsed: boolean;
   setIsCollapsed?: Dispatch<SetStateAction<boolean>>;
 }
 

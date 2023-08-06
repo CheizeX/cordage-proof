@@ -11,6 +11,6 @@ export interface MainProps {
       icon: string;
     } | null>
   >;
-  isCollapsed: boolean;
+  iscollapsed: boolean;
   setIsCollapsed: Dispatch<SetStateAction<boolean>>;
 }

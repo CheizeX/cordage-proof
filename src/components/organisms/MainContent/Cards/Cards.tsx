@@ -62,12 +62,12 @@ const Cards: FC<any> = ({ randomColor, search }) => {
               shadow={index === 0}
               star={index === 0}
               text={item.description}
-              backgroundColor={randomColor(index)}
+              backgroundcolor={randomColor(index)}
               size={42}
             />
             <IconButton
               icon='/DotsThreeOutline.svg'
-              backgroundColor='#FFFFFF66'
+              backgroundcolor='#FFFFFF66'
             />
           </S.StyledCardHeader>
           <S.StyledCardBody>
@@ -87,7 +87,7 @@ const Cards: FC<any> = ({ randomColor, search }) => {
                   <IconButton
                     key={index}
                     icon={`/${icon}.svg`}
-                    iconSize={"20px"}
+                    iconsize={"20px"}
                   />
                 )
               )}
@@ -95,7 +95,7 @@ const Cards: FC<any> = ({ randomColor, search }) => {
             <div>
               <Avatar
                 text={item.responsible.first_name}
-                backgroundColor={theme.colors["--green500"]}
+                backgroundcolor={theme.colors["--green500"]}
                 size={32}
               />
             </div>
