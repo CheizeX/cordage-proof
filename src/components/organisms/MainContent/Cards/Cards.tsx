@@ -24,7 +24,7 @@ const images = [
   Image4,
 ];
 
-const Cards: FC<any> = ({ randomColor, search }) => {
+const Cards: FC<any> = ({ search }) => {
   const currentPageData = useMemo(
     () =>
       search
@@ -55,14 +55,14 @@ const Cards: FC<any> = ({ randomColor, search }) => {
   return (
     <S.StyledCardsContainer>
       {currentPageData.map((item: any, index: number) => (
-        <S.StyledCard key={index} color={randomColor(index)}>
+        <S.StyledCard key={index} color={item.colors_theme}>
           <S.StyledCardHeader img={images[index]}>
             <Avatar
               outlined
               shadow={index === 0}
               star={index === 0}
               text={item.description}
-              backgroundcolor={randomColor(index)}
+              backgroundcolor={item.colors_theme}
               size={42}
             />
             <IconButton

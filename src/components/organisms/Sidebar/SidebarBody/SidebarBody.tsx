@@ -13,9 +13,6 @@ const SidebarBody: FC<Partial<MainProps> & SidebarBodyProps> = ({
   activeContent,
   setActiveContent,
 }) => {
-  console.log({
-    activeContent,
-  });
   return (
     <S.StyledSidebarBody>
       {stateMachine.group.body.map((item, index) => (
