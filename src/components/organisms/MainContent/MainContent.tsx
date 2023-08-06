@@ -114,12 +114,21 @@ const MainContent: FC<MainProps> = ({
               />
             </S.StyledButtonsContainer>
           </S.StyledSearchAndButtonsContainer>
+          {selected === "list" ? (
+            <Table randomColor={randomColor} search={search} />
+          ) : (
+            <Cards randomColor={randomColor} search={search} />
+          )}
+          <S.StyledDisfuminator />
         </>
-      ) : null}
-      {selected === "list" ? (
-        <Table randomColor={randomColor} search={search} />
       ) : (
-        <Cards randomColor={randomColor} search={search} />
+        <S.StyledCordageAnimation>
+          <img
+            src='/LogoCordage.svg'
+            alt='Cordage animation'
+            style={{ width: "100%" }}
+          />
+        </S.StyledCordageAnimation>
       )}
     </S.StyledMainContentSection>
   );

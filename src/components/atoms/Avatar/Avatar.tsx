@@ -3,6 +3,7 @@ import { AvatarProps } from "./Avatar.interface";
 import Text from "../Text/Text";
 import * as S from "./Avatar.styles";
 import { theme } from "../../../themes/theme";
+import { ReactSVG } from "react-svg";
 
 const getInitials = (text: string) => {
   const words = text.split(" ");
@@ -19,13 +20,19 @@ const Avatar: React.FC<AvatarProps> = ({
   size,
   backgroundColor,
   color,
+  outlined,
+  shadow,
+  star,
 }) => {
   if (image) {
     return (
       <S.StyledAvatarWrapper
         size={size}
         backgroundColor={backgroundColor}
-        color={color}>
+        color={color}
+        shadow={shadow}
+        star={star}
+        outlined={outlined}>
         <S.StyledAvatarImage src={image} alt={alt} />
       </S.StyledAvatarWrapper>
     );
@@ -33,10 +40,17 @@ const Avatar: React.FC<AvatarProps> = ({
 
   if (text) {
     return (
-      <S.StyledAvatarWrapper size={size} backgroundColor={backgroundColor}>
+      <S.StyledAvatarWrapper
+        size={size}
+        backgroundColor={backgroundColor}
+        color={color}
+        shadow={shadow}
+        star={star}
+        outlined={outlined}>
         <Text color={color ?? theme.colors["--white"]}>
           {getInitials(text)}
         </Text>
+        {star && <ReactSVG src='/Avatarstart.svg' />}
       </S.StyledAvatarWrapper>
     );
   }
