@@ -28,7 +28,7 @@ const SidebarTop: FC<Partial<MainProps> & SidebarBodyProps> = ({
               });
               setActiveContent && setActiveContent(null);
             }}>
-            <IconAtom icon='/ChevronLeft.svg' iconSize='14px' />
+            <IconAtom icon='/ChevronLeft.svg' iconsize='14px' />
             <Text
               color={theme.colors["--orange600"]}
               size='0.875rem'
