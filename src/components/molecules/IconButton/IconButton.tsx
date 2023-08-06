@@ -5,14 +5,14 @@ import IconAtom from "../../atoms/IconAtom/IconAtom";
 
 const IconButton: FC<IconButtonProps> = ({
   icon,
-  iconSize,
+  iconsize,
   onClick,
   color,
-  status,
+  state,
   radius,
   height,
   width,
-  backgroundColor,
+  backgroundcolor,
 }) => {
   const handleClick = () => {
     if (onClick) {
@@ -28,9 +28,9 @@ const IconButton: FC<IconButtonProps> = ({
       radius={radius}
       height={height}
       width={width}
-      backgroundColor={backgroundColor}>
-      <IconAtom icon={icon} color={color} iconSize={iconSize} />
-      <S.StyledStatusIndicator status={status} />
+      backgroundcolor={backgroundcolor}>
+      <IconAtom icon={icon} color={color} iconsize={iconsize} />
+      <S.StyledStatusIndicator state={state} />
     </S.StyledButton>
   );
 };

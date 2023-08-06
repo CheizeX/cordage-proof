@@ -7,8 +7,8 @@ export const StyledAvatarWrapper = styled.div<AvatarProps>`
   width: ${({ size }) => size || 32}px;
   height: ${({ size }) => size || 32}px;
   border-radius: 50%;
-  background-color: ${({ backgroundColor }) =>
-    backgroundColor || "transparent"};
+  background-color: ${({ backgroundcolor }) =>
+    backgroundcolor || "transparent"};
   color: ${({ color }) => color || theme.colors["--white"]};
   display: flex;
   justify-content: center;

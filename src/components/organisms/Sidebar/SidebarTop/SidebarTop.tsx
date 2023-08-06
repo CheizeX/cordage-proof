@@ -28,7 +28,7 @@ const SidebarTop: FC<Partial<MainProps> & SidebarBodyProps> = ({
               });
               setActiveContent && setActiveContent(null);
             }}>
-            <IconAtom icon='/ChevronLeft.svg' iconSize='14px' />
+            <IconAtom icon='/ChevronLeft.svg' iconsize='14px' />
             <Text
               color={theme.colors["--orange600"]}
               size='0.875rem'
@@ -45,7 +45,7 @@ const SidebarTop: FC<Partial<MainProps> & SidebarBodyProps> = ({
         </S.StyledSubmenuContainer>
       ) : (
         <S.StyledOrganizationInfoContainer>
-          <Avatar text='A' backgroundColor={theme.colors["--orange600"]} />
+          <Avatar text='A' backgroundcolor={theme.colors["--orange600"]} />
           <S.StyledOrganizationInfo>
             <Text color={theme.colors["--white"]} weight='700'>
               Fedex Corporation

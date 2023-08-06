@@ -92,7 +92,7 @@ export const StyledPaginationContainer = styled.div`
 `;
 
 export const StyledItemsPerPageButton = styled.button<{
-  isSelected?: boolean;
+  isselected?: boolean;
 }>`
   display: flex;
   justify-content: space-between;
@@ -102,7 +102,7 @@ export const StyledItemsPerPageButton = styled.button<{
   height: 100%;
   border: 1px solid
     ${(props) =>
-      props.isSelected
+      props.isselected
         ? props.theme.colors["--neutral100"]
         : props.theme.colors["--neutral300"]};
   border-radius: 4px;
@@ -114,13 +114,13 @@ export const StyledNextAndPreviousButtonContainer = styled.div`
   align-items: center;
 `;
 export const StyledPageNumber = styled.button<{
-  isSelected?: boolean;
+  isselected?: boolean;
 }>`
   width: 32px;
   height: 32px;
   border-radius: 9999px;
   background-color: ${(props) =>
-    props.isSelected
+    props.isselected
       ? props.theme.colors["--neutral100"]
       : props.theme.colors["--white"]};
 

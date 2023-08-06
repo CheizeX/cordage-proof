@@ -4,13 +4,13 @@ import { StyledIcon } from "./IconAtom.styles";
 const IconAtom: FC<{
   icon?: string;
   color?: string;
-  iconSize?: string;
-}> = ({ icon, color, iconSize }) => {
+  iconsize?: string;
+}> = ({ icon, color, iconsize }) => {
   if (!icon) {
     return null;
   }
 
-  return <StyledIcon src={icon} color={color} iconSize={iconSize} />;
+  return <StyledIcon src={icon} color={color} iconsize={iconsize} />;
 };
 
 export default IconAtom;

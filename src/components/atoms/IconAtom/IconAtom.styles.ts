@@ -3,7 +3,7 @@ import styled, { css } from "styled-components";
 
 export const StyledIcon = styled(ReactSVG)<{
   color?: string;
-  iconSize?: string;
+  iconsize?: string;
 }>`
   width: 24px;
   height: 24px;
@@ -17,8 +17,8 @@ export const StyledIcon = styled(ReactSVG)<{
     width: 100%;
     height: 100%;
     & > svg {
-      width: ${({ iconSize }) => iconSize || "24px"};
-      height: ${({ iconSize }) => iconSize || "24px"};
+      width: ${({ iconsize }) => iconsize || "24px"};
+      height: ${({ iconsize }) => iconsize || "24px"};
       & path {
         ${(props) =>
           props.color &&

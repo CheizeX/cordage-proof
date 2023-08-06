@@ -13,11 +13,11 @@ const AppBar = () => {
 
       <S.StyledAppBarRightSide>
         <S.StyledNavbar>
-          {navbarItems.map((item) => (
+          {navbarItems?.map((item) => (
             <IconButton
-              icon={`${item.name}.svg`}
               key={item.name}
-              status={item.status}
+              icon={`${item.name}.svg`}
+              state={item.state === true ? true : false}
             />
           ))}
         </S.StyledNavbar>
