@@ -7,7 +7,7 @@ import data from "../../../../data/BU.json";
 import * as S from "./Table.styles";
 
 const Table: FC<any> = ({ randomColor, search }) => {
-  // Pagination state and constants
+  // Pagination
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage, setItemsPerPage] = useState(4);
   const [selectingItemsPerPage, setSelectingItemsPerPage] = useState(false);
@@ -19,7 +19,6 @@ const Table: FC<any> = ({ randomColor, search }) => {
 
   const currentPageData = useMemo(
     () =>
-      //  filtrar segun el search
       search
         ? data
             .filter((item) => {
@@ -77,6 +76,7 @@ const Table: FC<any> = ({ randomColor, search }) => {
                 gap: "8px",
               }}>
               <Avatar
+                star={i === 0}
                 text={item.description}
                 backgroundColor={randomColor(i)}
               />
