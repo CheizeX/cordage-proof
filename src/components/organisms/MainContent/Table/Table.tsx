@@ -1,4 +1,4 @@
-import { FC, Fragment, useMemo, useState, useCallback, useEffect } from "react";
+import { FC, useMemo, useState, useCallback, useEffect } from "react";
 import { theme } from "../../../../themes/theme";
 import Avatar from "../../../atoms/Avatar/Avatar";
 import IconAtom from "../../../atoms/IconAtom/IconAtom";
@@ -6,9 +6,8 @@ import IconButton from "../../../molecules/IconButton/IconButton";
 import data from "../../../../data/BU.json";
 import * as S from "./Table.styles";
 
-const Table: FC<any> = ({ randomColor, search, setSearch }) => {
+const Table: FC<any> = ({ search, setSearch }) => {
   // Pagination
-
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage, setItemsPerPage] = useState(4);
   const [selectingItemsPerPage, setSelectingItemsPerPage] = useState(false);
@@ -64,84 +63,78 @@ const Table: FC<any> = ({ randomColor, search, setSearch }) => {
       </S.StyledGrid>
 
       {currentPageData.map((item, i) => (
-        <S.StyledRowGrid>
-          <Fragment key={i}>
-            <S.StyledCell
+        <S.StyledRowGrid key={i}>
+          <S.StyledCell
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              alignItems: "center",
+              justifyContent: "flex-start",
+              minWidth: "fit-content",
+              gap: "8px",
+            }}>
+            <Avatar
+              star={item.description === "Principal Plant" ? true : false}
+              text={item.description}
+              backgroundcolor={item.colors_theme}
+            />
+            <div>
+              <S.StyledCellContent size='12px' weight='600'>
+                {item.description}
+              </S.StyledCellContent>
+              <S.StyledCellContent color={theme.colors["--neutral500"]}>
+                {item.name}
+              </S.StyledCellContent>
+            </div>
+          </S.StyledCell>
+          <S.StyledCell
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              alignItems: "center",
+              justifyContent: "flex-start",
+              minWidth: "fit-content",
+              gap: "12px",
+            }}>
+            <Avatar
+              text={`${item.responsible.first_name} {' '} ${item.responsible.last_name}`}
+              backgroundcolor={item.colors_theme}
+            />
+            <div
               style={{
                 display: "flex",
-                flexDirection: "row",
-                alignItems: "center",
-                justifyContent: "flex-start",
+                flexDirection: "column",
+                alignItems: "start",
+                justifyContent: "center",
                 minWidth: "fit-content",
-                gap: "8px",
               }}>
-              <Avatar
-                star={i === 0}
-                text={item.description}
-                backgroundcolor={randomColor(i)}
-              />
-              <div>
-                <S.StyledCellContent size='12px' weight='600'>
-                  {item.description}
-                </S.StyledCellContent>
-                <S.StyledCellContent color={theme.colors["--neutral500"]}>
-                  {item.name}
-                </S.StyledCellContent>
-              </div>
-            </S.StyledCell>
-            <S.StyledCell
-              style={{
-                display: "flex",
-                flexDirection: "row",
-                alignItems: "center",
-                justifyContent: "flex-start",
-                minWidth: "fit-content",
-                gap: "12px",
-              }}>
-              <Avatar
-                text={`${item.responsible.first_name} {' '} ${item.responsible.last_name}`}
-                backgroundcolor={randomColor(i)}
-              />
-              <div
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  alignItems: "start",
-                  justifyContent: "center",
-                  minWidth: "fit-content",
-                }}>
-                <S.StyledCellContent size='14px'>
-                  {item.responsible.first_name} {item.responsible.last_name}
-                </S.StyledCellContent>
-                <S.StyledCellContent color={theme.colors["--gray500"]}>
-                  {item.responsible.email}
-                </S.StyledCellContent>
-              </div>
-            </S.StyledCell>
-            <S.StyledCell>
-              <S.StyledCellContent size='14px'>{item.code}</S.StyledCellContent>
-            </S.StyledCell>
-            <S.StyledCell>
               <S.StyledCellContent size='14px'>
-                {item.address.country === "MX"
-                  ? "Mexico"
-                  : item.address.country}
+                {item.responsible.first_name} {item.responsible.last_name}
               </S.StyledCellContent>
-            </S.StyledCell>
-            <S.StyledCell>
-              <S.StyledCellContent size='14px'>
-                {item.address.location === "QRO"
-                  ? "CDMX"
-                  : item.address.location}
-              </S.StyledCellContent>
-            </S.StyledCell>
-            <S.StyledCell>
-              <S.StyledCellContent>CDT, UTC -5</S.StyledCellContent>
               <S.StyledCellContent color={theme.colors["--gray500"]}>
-                México, CDMX
+                {item.responsible.email}
               </S.StyledCellContent>
-            </S.StyledCell>
-          </Fragment>
+            </div>
+          </S.StyledCell>
+          <S.StyledCell>
+            <S.StyledCellContent size='14px'>{item.code}</S.StyledCellContent>
+          </S.StyledCell>
+          <S.StyledCell>
+            <S.StyledCellContent size='14px'>
+              {item.address.country === "MX" ? "Mexico" : item.address.country}
+            </S.StyledCellContent>
+          </S.StyledCell>
+          <S.StyledCell>
+            <S.StyledCellContent size='14px'>
+              {item.address.location === "QRO" ? "CDMX" : item.address.location}
+            </S.StyledCellContent>
+          </S.StyledCell>
+          <S.StyledCell>
+            <S.StyledCellContent>CDT, UTC -5</S.StyledCellContent>
+            <S.StyledCellContent color={theme.colors["--gray500"]}>
+              México, CDMX
+            </S.StyledCellContent>
+          </S.StyledCell>
         </S.StyledRowGrid>
       ))}
 

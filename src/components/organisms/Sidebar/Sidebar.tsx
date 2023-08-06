@@ -19,9 +19,7 @@ const Sidebar: FC<MainProps> = ({
     group: sidebarItems as SidebarItems,
     activeSubmenu: null,
   });
-  console.log({
-    stateMachine,
-  });
+
   const handleCollapse = () => {
     setIsCollapsed(!iscollapsed);
   };

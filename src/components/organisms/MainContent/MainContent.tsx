@@ -4,39 +4,12 @@ import { MainProps } from "../../templates/MainLayout/MainLayout.interface";
 import IconAtom from "../../atoms/IconAtom/IconAtom";
 import { theme } from "../../../themes/theme";
 import IconButton from "../../molecules/IconButton/IconButton";
-import data from "../../../data/BU.json";
 import Table from "./Table/Table";
 import Cards from "./Cards/Cards";
 
-const MainContent: FC<MainProps> = ({
-  activeContent,
-  // setActiveContent,
-  iscollapsed,
-  // setIsCollapsed,
-}) => {
-  console.log({ activeContent });
-  console.log({ data });
+const MainContent: FC<MainProps> = ({ activeContent, iscollapsed }) => {
   const [selected, setSelected] = useState<string>("list");
   const [search, setSearch] = useState<string>("");
-
-  // funcion que me genere un color random en base a un numero que le pase
-  const randomColor = (num: number) => {
-    const twelvepastelColors = [
-      "#FFB3BA",
-      "#167116",
-      "#FFDFBA",
-      "#BAE1FF",
-      "#c0b66c",
-      "#FFBAF3",
-      "#4f7758",
-      "#896bb0",
-      "#326784",
-      "#FFC8BA",
-      "#BAE1FF",
-      "#D8BAFF",
-    ];
-    return twelvepastelColors[num];
-  };
 
   return (
     <S.StyledMainContentSection iscollapsed={iscollapsed}>
@@ -115,13 +88,9 @@ const MainContent: FC<MainProps> = ({
             </S.StyledButtonsContainer>
           </S.StyledSearchAndButtonsContainer>
           {selected === "list" ? (
-            <Table
-              randomColor={randomColor}
-              search={search}
-              setSearch={setSearch}
-            />
+            <Table search={search} setSearch={setSearch} />
           ) : (
-            <Cards randomColor={randomColor} search={search} />
+            <Cards search={search} />
           )}
           <S.StyledDisfuminator />
         </>
