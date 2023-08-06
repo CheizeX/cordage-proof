@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const StyledMainContentSection = styled.section<{
   isCollapsed: boolean;
 }>`
+  position: relative;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -11,6 +12,7 @@ export const StyledMainContentSection = styled.section<{
   height: 100%;
   margin-left: ${(props) => (!props.isCollapsed ? "0" : "-232px")};
   padding: 28px 24px;
+  padding-bottom: 0;
   transition: 0.3s ease-in-out;
 `;
 
@@ -109,6 +111,45 @@ export const StyledButtonsContainer = styled.div`
     &:hover {
       transition: 0.2s ease-in-out;
       opacity: 0.8;
+    }
+  }
+`;
+
+export const StyledDisfuminator = styled.div`
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+
+    ${(props) => props.theme.colors["--white"]} 100%
+  );
+`;
+
+export const StyledCordageAnimation = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: 100%;
+  flex: 1;
+  padding-bottom: 24px;
+  margin: auto;
+  filter: opacity(0.8);
+  & > img {
+    object-fit: fill;
+    animation: floating 1s ease-out infinite;
+    @keyframes floating {
+      0% {
+      }
+      30% {
+        scale: 1.01;
+      }
+      100% {
+      }
     }
   }
 `;

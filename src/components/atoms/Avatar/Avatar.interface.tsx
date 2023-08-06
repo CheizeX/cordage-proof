@@ -5,4 +5,7 @@ export type AvatarProps = {
   size?: number;
   backgroundColor?: string;
   color?: string;
+  shadow?: boolean;
+  outlined?: boolean;
+  star?: boolean;
 };
