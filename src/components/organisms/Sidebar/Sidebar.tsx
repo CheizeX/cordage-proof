@@ -12,7 +12,7 @@ import { MainProps } from "../../templates/MainLayout/MainLayout.interface";
 const Sidebar: FC<MainProps> = ({
   activeContent,
   setActiveContent,
-  isCollapsed,
+  iscollapsed,
   setIsCollapsed,
 }) => {
   const [stateMachine, setStateMachine] = useState<StateMachineProps>({
@@ -23,22 +23,22 @@ const Sidebar: FC<MainProps> = ({
     stateMachine,
   });
   const handleCollapse = () => {
-    setIsCollapsed(!isCollapsed);
+    setIsCollapsed(!iscollapsed);
   };
 
   return (
-    <S.StyledSidebar isCollapsed={isCollapsed}>
-      <S.StyledCollapseButtonContainer isCollapsed={isCollapsed}>
+    <S.StyledSidebar iscollapsed={iscollapsed}>
+      <S.StyledCollapseButtonContainer iscollapsed={iscollapsed}>
         <IconButton
           icon='/ChevronLeft.svg'
-          backgroundColor={theme.colors["--white"]}
+          backgroundcolor={theme.colors["--white"]}
           width='24px'
           height='24px'
-          iconSize='10px'
+          iconsize='10px'
           onClick={handleCollapse}
         />
       </S.StyledCollapseButtonContainer>
-      <S.StyledSidebarBox isCollapsed={isCollapsed}>
+      <S.StyledSidebarBox iscollapsed={iscollapsed}>
         <SidebarTop
           stateMachine={stateMachine}
           setStateMachine={setStateMachine}

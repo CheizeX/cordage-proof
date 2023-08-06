@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledMainContentSection = styled.section<{
-  isCollapsed: boolean;
+  iscollapsed: boolean;
 }>`
   position: relative;
   flex: 1;
@@ -10,7 +10,7 @@ export const StyledMainContentSection = styled.section<{
   justify-content: flex-start;
   width: 100%;
   height: 100%;
-  margin-left: ${(props) => (!props.isCollapsed ? "0" : "-232px")};
+  margin-left: ${(props) => (props.iscollapsed === false ? "0" : "-232px")};
   padding: 28px 24px;
   padding-bottom: 0;
   transition: 0.3s ease-in-out;

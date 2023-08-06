@@ -9,12 +9,12 @@ export const StyledButton = styled.button<Omit<IconButtonProps, "icon">>`
   width: ${(props) => (props.width ? props.width : "40px")};
   height: ${(props) => (props.height ? props.height : "40px")};
   background-color: ${(props) =>
-    props.backgroundColor ? props.backgroundColor : "transparent"};
+    props.backgroundcolor ? props.backgroundcolor : "transparent"};
   border-radius: ${(props) => (props.radius ? props.radius : "50%")};
 `;
 
 export const StyledStatusIndicator = styled.div<{
-  status?: boolean;
+  state?: boolean;
 }>`
   width: 10px;
   height: 10px;
@@ -23,5 +23,5 @@ export const StyledStatusIndicator = styled.div<{
   right: 6px;
   border-radius: 50%;
   background-color: ${(props) => props.theme.colors["--red500"]};
-  display: ${(props) => (props.status ? "block" : "none")};
+  display: ${(props) => (props.state === true ? "block" : "none")};
 `;

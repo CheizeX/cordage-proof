@@ -12,8 +12,9 @@ const SidebarFooter: FC<SidebarBodyProps> = ({
 }) => {
   return (
     <S.StyledSidebarFooter>
-      {stateMachine.group.footer.map((item) => (
+      {stateMachine.group.footer.map((item, i) => (
         <SidebarItem
+          key={i}
           notification={item.notification}
           selected={stateMachine.activeSubmenu?.name === item.name}
           icon={`/${item.icon}.svg`}

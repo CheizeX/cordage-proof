@@ -1,4 +1,4 @@
-import { FC, Fragment, useMemo, useState } from "react";
+import { FC, Fragment, useMemo, useState, useCallback, useEffect } from "react";
 import { theme } from "../../../../themes/theme";
 import Avatar from "../../../atoms/Avatar/Avatar";
 import IconAtom from "../../../atoms/IconAtom/IconAtom";
@@ -6,8 +6,9 @@ import IconButton from "../../../molecules/IconButton/IconButton";
 import data from "../../../../data/BU.json";
 import * as S from "./Table.styles";
 
-const Table: FC<any> = ({ randomColor, search }) => {
+const Table: FC<any> = ({ randomColor, search, setSearch }) => {
   // Pagination
+
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage, setItemsPerPage] = useState(4);
   const [selectingItemsPerPage, setSelectingItemsPerPage] = useState(false);
@@ -17,43 +18,42 @@ const Table: FC<any> = ({ randomColor, search }) => {
     [itemsPerPage]
   );
 
-  const currentPageData = useMemo(
-    () =>
-      search
-        ? data
-            .filter((item) => {
-              return (
-                item.description.toLowerCase().includes(search.toLowerCase()) ||
-                item.name.toLowerCase().includes(search.toLowerCase()) ||
-                item.responsible.first_name
-                  .toLowerCase()
-                  .includes(search.toLowerCase()) ||
-                item.responsible.last_name
-                  .toLowerCase()
-                  .includes(search.toLowerCase()) ||
-                item.responsible.email
-                  .toLowerCase()
-                  .includes(search.toLowerCase()) ||
-                item.code.toLowerCase().includes(search.toLowerCase()) ||
-                item.address.country
-                  .toLowerCase()
-                  .includes(search.toLowerCase()) ||
-                item.address.location
-                  .toLowerCase()
-                  .includes(search.toLowerCase())
-              );
-            })
-            .slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage)
-        : data.slice(
-            (currentPage - 1) * itemsPerPage,
-            currentPage * itemsPerPage
-          ),
-    [currentPage, itemsPerPage, search]
-  );
+  const [filteredData, setFilteredData] = useState(data);
+
+  const filterData = useCallback(() => {
+    const filtered = data.filter((item) => {
+      return (
+        item.description.toLowerCase().includes(search.toLowerCase()) ||
+        item.name.toLowerCase().includes(search.toLowerCase()) ||
+        item.responsible.first_name
+          .toLowerCase()
+          .includes(search.toLowerCase()) ||
+        item.responsible.last_name
+          .toLowerCase()
+          .includes(search.toLowerCase()) ||
+        item.responsible.email.toLowerCase().includes(search.toLowerCase()) ||
+        item.code.toLowerCase().includes(search.toLowerCase()) ||
+        item.address.country.toLowerCase().includes(search.toLowerCase()) ||
+        item.address.location.toLowerCase().includes(search.toLowerCase())
+      );
+    });
+    setFilteredData(filtered);
+    setCurrentPage(1);
+  }, [search]);
+
+  useEffect(() => {
+    filterData();
+  }, [filterData]);
+
+  const currentPageData = useMemo(() => {
+    return filteredData.slice(
+      (currentPage - 1) * itemsPerPage,
+      currentPage * itemsPerPage
+    );
+  }, [currentPage, itemsPerPage, filteredData]);
 
   return (
     <S.StyledTableContainer>
-      {/* header */}
       <S.StyledGrid>
         <S.StyledHeaderCell>Business Unit</S.StyledHeaderCell>
         <S.StyledHeaderCell>Responsible User</S.StyledHeaderCell>
@@ -78,7 +78,7 @@ const Table: FC<any> = ({ randomColor, search }) => {
               <Avatar
                 star={i === 0}
                 text={item.description}
-                backgroundColor={randomColor(i)}
+                backgroundcolor={randomColor(i)}
               />
               <div>
                 <S.StyledCellContent size='12px' weight='600'>
@@ -100,7 +100,7 @@ const Table: FC<any> = ({ randomColor, search }) => {
               }}>
               <Avatar
                 text={`${item.responsible.first_name} {' '} ${item.responsible.last_name}`}
-                backgroundColor={randomColor(i)}
+                backgroundcolor={randomColor(i)}
               />
               <div
                 style={{
@@ -157,13 +157,13 @@ const Table: FC<any> = ({ randomColor, search }) => {
               style={{
                 transform: "rotate(90deg)",
               }}>
-              <IconAtom icon='/WbCaretRight.svg' iconSize={"14px"} />
+              <IconAtom icon='/WbCaretRight.svg' iconsize={"14px"} />
             </div>
           </S.StyledItemsPerPageButton>
           {selectingItemsPerPage && (
             <S.StyledItemsPerPageDropdown>
               <S.StyledItemsPerPageDropdownButton
-                active={Number(itemsPerPage) === 3}
+                active={Number(itemsPerPage) === 3 ? true : false}
                 type='button'
                 onClick={() => {
                   setItemsPerPage(3);
@@ -205,8 +205,9 @@ const Table: FC<any> = ({ randomColor, search }) => {
             }}>
             <IconButton
               icon='/WbCaretRight.svg'
-              iconSize={"14px"}
+              iconsize={"14px"}
               onClick={() => {
+                setSearch("");
                 currentPage > 1 && setCurrentPage(currentPage - 1);
               }}
             />
@@ -216,8 +217,9 @@ const Table: FC<any> = ({ randomColor, search }) => {
               return (
                 <S.StyledPageNumber
                   key={i}
-                  isSelected={currentPage === i + 1}
+                  isselected={currentPage === i + 1}
                   onClick={() => {
+                    setSearch("");
                     setCurrentPage(i + 1);
                   }}>
                   {i + 1}
@@ -228,8 +230,9 @@ const Table: FC<any> = ({ randomColor, search }) => {
 
           <IconButton
             icon='/WbCaretRight.svg'
-            iconSize={"14px"}
+            iconsize={"14px"}
             onClick={() => {
+              setSearch("");
               currentPage < totalPages && setCurrentPage(currentPage + 1);
             }}
           />

@@ -45,7 +45,7 @@ const SidebarTop: FC<Partial<MainProps> & SidebarBodyProps> = ({
         </S.StyledSubmenuContainer>
       ) : (
         <S.StyledOrganizationInfoContainer>
-          <Avatar text='A' backgroundColor={theme.colors["--orange600"]} />
+          <Avatar text='A' backgroundcolor={theme.colors["--orange600"]} />
           <S.StyledOrganizationInfo>
             <Text color={theme.colors["--white"]} weight='700'>
               Fedex Corporation

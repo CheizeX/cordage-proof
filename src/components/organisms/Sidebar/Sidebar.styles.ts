@@ -13,14 +13,15 @@ export const StyledSidebar = styled.aside<SidebarProps>`
   background: ${(props) => props.theme.colors["--neutral900"]};
   transition: 0.3s;
   transform: ${(props) =>
-    props.isCollapsed ? "translateX(-232px)" : "translateX(0px)"};
+    props.iscollapsed === true ? "translateX(-232px)" : "translateX(0px)"};
+  z-index: 1;
 `;
 
 export const StyledSidebarBox = styled.div<SidebarProps>`
   width: 100%;
   min-height: 100%;
   flex-direction: column;
-  opacity: ${(props) => (props.isCollapsed ? "0" : "1")};
+  opacity: ${(props) => (props.iscollapsed === true ? "0" : "1")};
   transition: 0.1s;
 `;
 
@@ -33,7 +34,7 @@ export const StyledCollapseButtonContainer = styled.div<SidebarProps>`
   border-radius: 50%;
   transition: 0.6s;
   transform: ${(props) =>
-    props.isCollapsed ? "rotate(180deg)" : "rotate(0deg)"};
+    props.iscollapsed === true ? "rotate(180deg)" : "rotate(0deg)"};
   transition: 0.3s;
   z-index: 1;
 `;

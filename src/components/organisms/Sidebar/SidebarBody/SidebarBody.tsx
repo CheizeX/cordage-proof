@@ -29,8 +29,9 @@ const SidebarBody: FC<Partial<MainProps> & SidebarBodyProps> = ({
             </Text>
           </S.StyledSidebarBodyItemsBoxTitleContainer>
 
-          {item.items.map((nested) => (
+          {item.items.map((nested, i) => (
             <SidebarItem
+              key={Date.now() + i}
               selected={activeContent?.name === nested.name}
               icon={nested.icon ? `/${nested.icon}.svg` : undefined}
               color={theme.colors["--neutral300"]}

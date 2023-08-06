@@ -11,7 +11,7 @@ import Cards from "./Cards/Cards";
 const MainContent: FC<MainProps> = ({
   activeContent,
   // setActiveContent,
-  isCollapsed,
+  iscollapsed,
   // setIsCollapsed,
 }) => {
   console.log({ activeContent });
@@ -39,7 +39,7 @@ const MainContent: FC<MainProps> = ({
   };
 
   return (
-    <S.StyledMainContentSection isCollapsed={isCollapsed}>
+    <S.StyledMainContentSection iscollapsed={iscollapsed}>
       {activeContent?.name === "Business Units" ? (
         <>
           <S.StyledHeader>
@@ -47,7 +47,7 @@ const MainContent: FC<MainProps> = ({
               <IconAtom
                 icon={activeContent?.icon}
                 color={theme.colors["--orange600"]}
-                iconSize={"28px"}
+                iconsize={"28px"}
               />
               <h2>{activeContent?.name}</h2>
             </div>
@@ -63,7 +63,7 @@ const MainContent: FC<MainProps> = ({
               <IconAtom
                 icon='/MagnifyingGlass.svg'
                 color={theme.colors["--neutral400"]}
-                iconSize={"28px"}
+                iconsize={"28px"}
               />
               <input
                 type='text'
@@ -82,12 +82,12 @@ const MainContent: FC<MainProps> = ({
                       ? theme.colors["--orange600"]
                       : theme.colors["--neutral400"]
                   }
-                  backgroundColor={
+                  backgroundcolor={
                     selected === "list"
                       ? theme.colors["--orange200"]
                       : "transparent"
                   }
-                  iconSize={"28px"}
+                  iconsize={"28px"}
                   onClick={() => setSelected("list")}
                 />
                 <IconButton
@@ -97,25 +97,29 @@ const MainContent: FC<MainProps> = ({
                       ? theme.colors["--orange600"]
                       : theme.colors["--neutral400"]
                   }
-                  backgroundColor={
+                  backgroundcolor={
                     selected === "grid"
                       ? theme.colors["--orange200"]
                       : "transparent"
                   }
-                  iconSize={"28px"}
+                  iconsize={"28px"}
                   onClick={() => setSelected("grid")}
                 />
               </div>
               <IconButton
                 icon='/DotsThreeOutline.svg'
                 color={theme.colors["--neutral400"]}
-                iconSize={"28px"}
+                iconsize={"28px"}
                 onClick={() => alert("Sort button clicked")}
               />
             </S.StyledButtonsContainer>
           </S.StyledSearchAndButtonsContainer>
           {selected === "list" ? (
-            <Table randomColor={randomColor} search={search} />
+            <Table
+              randomColor={randomColor}
+              search={search}
+              setSearch={setSearch}
+            />
           ) : (
             <Cards randomColor={randomColor} search={search} />
           )}

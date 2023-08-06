@@ -1,9 +1,9 @@
 export interface IconButtonProps {
   icon: string;
-  iconSize?: string;
+  iconsize?: string;
   color?: string;
-  backgroundColor?: string;
-  status?: boolean;
+  backgroundcolor?: string;
+  state?: boolean;
   width?: string;
   height?: string;
   radius?: string;

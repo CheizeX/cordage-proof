@@ -1,14 +1,14 @@
 export const navbarItems = [
   {
     name: "Bell",
-    status: false,
+    state: false,
   },
   {
     name: "Storefront",
-    status: false,
+    state: false,
   },
   {
     name: "Gear",
-    status: true,
+    state: true,
   },
 ];

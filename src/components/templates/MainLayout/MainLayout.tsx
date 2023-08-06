@@ -7,7 +7,7 @@ import WidgetBar from "../../organisms/WidgetBar/WidgetBar";
 
 const MainLayout: FC = () => {
   const [activeContent, setActiveContent] = useState<any>(null);
-  const [isCollapsed, setIsCollapsed] = useState<boolean>(false);
+  const [iscollapsed, setIsCollapsed] = useState<boolean>(false);
 
   return (
     <S.StyledMainLayout>
@@ -16,14 +16,14 @@ const MainLayout: FC = () => {
         <Sidebar
           activeContent={activeContent}
           setActiveContent={setActiveContent}
-          isCollapsed={isCollapsed}
+          iscollapsed={iscollapsed}
           setIsCollapsed={setIsCollapsed}
         />
 
         <MainContent
           activeContent={activeContent}
           setActiveContent={setActiveContent}
-          isCollapsed={isCollapsed}
+          iscollapsed={iscollapsed}
           setIsCollapsed={setIsCollapsed}
         />
 

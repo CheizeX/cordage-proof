@@ -3,7 +3,7 @@ export type AvatarProps = {
   image?: string;
   alt?: string;
   size?: number;
-  backgroundColor?: string;
+  backgroundcolor?: string;
   color?: string;
   shadow?: boolean;
   outlined?: boolean;
