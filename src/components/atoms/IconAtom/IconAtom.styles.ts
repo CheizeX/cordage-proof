@@ -17,8 +17,8 @@ export const StyledIcon = styled(ReactSVG)<{
     width: 100%;
     height: 100%;
     & > svg {
-      width: ${({ iconsize }) => iconsize || "24px"};
-      height: ${({ iconsize }) => iconsize || "24px"};
+      width: ${(props) => props.iconsize ?? "24px"};
+      height: ${(props) => props.iconsize ?? "24px"};
       & path {
         ${(props) =>
           props.color &&
