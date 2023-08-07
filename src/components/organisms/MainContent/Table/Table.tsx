@@ -9,7 +9,7 @@ import * as S from "./Table.styles";
 const Table: FC<any> = ({ search, setSearch }) => {
   // Pagination
   const [currentPage, setCurrentPage] = useState(1);
-  const [itemsPerPage, setItemsPerPage] = useState(4);
+  const [itemsPerPage, setItemsPerPage] = useState(3);
   const [selectingItemsPerPage, setSelectingItemsPerPage] = useState(false);
 
   const totalPages = useMemo(
