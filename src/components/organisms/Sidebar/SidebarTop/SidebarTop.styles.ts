@@ -53,7 +53,7 @@ export const StyledSubmenuContainer = styled.div`
     &:hover {
       & > :first-child {
         transition: 0.5s ease-in-out;
-        transform: rotate(-720deg);
+        transform: rotate(-360deg);
       }
       & > :last-child {
         transition: 0.5s ease-in-out;

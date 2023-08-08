@@ -150,7 +150,11 @@ const Table: FC<any> = ({ search, setSearch }) => {
               style={{
                 transform: "rotate(90deg)",
               }}>
-              <IconAtom icon='/WbCaretRight.svg' iconsize={"14px"} />
+              <IconAtom
+                icon='/WbCaretRight.svg'
+                iconsize={"16px"}
+                color={theme.colors["--neutral500"]}
+              />
             </div>
           </S.StyledItemsPerPageButton>
           {selectingItemsPerPage && (
