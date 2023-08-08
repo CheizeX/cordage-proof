@@ -84,8 +84,10 @@ export const StyledPaginationContainer = styled.div`
   height: 60px;
   padding-left: 24px;
   border-top: 1px solid ${(props) => props.theme.colors["--neutral100"]};
+  color: ${({ theme }) => theme.colors["--neutral600"]};
   & > :first-child {
     display: flex;
+    align-items: center;
     gap: 8px;
     position: relative;
   }
@@ -95,11 +97,11 @@ export const StyledItemsPerPageButton = styled.button<{
   isselected?: boolean;
 }>`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   padding-left: 8px;
   width: 50px;
-  height: 100%;
+  height: 36px;
   border: 1px solid
     ${(props) =>
       props.isselected
@@ -134,13 +136,12 @@ export const StyledPageNumber = styled.button<{
 
 export const StyledItemsPerPageDropdown = styled.div`
   position: absolute;
-  bottom: 28px;
+  bottom: 38px;
   right: 0;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 8px;
   width: 50px;
   height: fit-content;
   border-radius: 4px;
@@ -158,14 +159,14 @@ export const StyledItemsPerPageDropdownButton = styled.button<{
   width: 100%;
   height: 32px;
   border: none;
-  border-radius: 4px;
   background-color: ${({ active, theme }) =>
     active ? theme.colors["--neutral100"] : theme.colors["--white"]};
   font-size: 14px;
   font-weight: 400;
   text-align: left;
+  color: ${({ theme }) => theme.colors["--neutral800"]};
   &:hover {
-    background: ${(props) => props.theme.colors["--neutral100"]};
+    background: ${(props) => props.theme.colors["--neutral200"]};
     transition: 0.3s ease-in-out;
     opacity: 0.9;
   }
